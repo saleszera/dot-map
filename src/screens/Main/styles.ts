@@ -1,6 +1,15 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
+  loadingContainer: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  loadingText: {
+    fontSize: 36,
+    letterSpacing: 8,
+  },
   container: {
     maxHeight: 300,
     maxWidth: 254,
