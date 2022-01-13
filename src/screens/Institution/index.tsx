@@ -18,7 +18,7 @@ const Institution = () => {
     <View style={styles.container}>
       <Text style={styles.title}>{school?.name?.toUpperCase()}</Text>
       {school?.courses?.map((course, index) => (
-        <View style={[styles.cardContainer, {marginTop: index > 0 ? 16 : 0}]}>
+        <View key={course.id} style={[styles.cardContainer, {marginTop: index > 0 ? 16 : 0}]}>
           <View style={styles.cardImageContainer}>
             <Image source={{uri: course.image}} resizeMode='contain' style={styles.cardImage}/>
           </View>
